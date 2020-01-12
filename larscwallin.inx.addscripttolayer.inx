@@ -1,0 +1,16 @@
+<inkscape-extension>
+  <_name>Add script to active Layer</_name>
+  <id>com.larscwallin.inx.addscripttolayer</id>
+  <dependency type="executable" location="extensions">larscwallin.inx.addscripttolayer.py</dependency>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+  <!-- <param name="open_after_created" type="boolean" _gui-text="Open script?">True</param> -->
+  <effect>
+    <object-type>all</object-type>
+    <effects-menu>
+       <submenu _name="Scripting"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">larscwallin.inx.addscripttolayer.py</command>
+  </script>
+</inkscape-extension>
