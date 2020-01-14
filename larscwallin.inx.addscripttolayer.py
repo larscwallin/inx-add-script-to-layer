@@ -60,10 +60,7 @@ class AddScriptToLayer(inkex.Effect):
             if self.open_after_created:
                 self.start_editor_app()
 
-            inkex.utils.debug('Script added for layer "' + self.active_layer_id + '". Open "Document properties/Scripting/Embedded scripts" to edit it.')
-
         else:
-            inkex.utils.debug('Layer "' + self.active_layer_id + '" already has a script attached')
             self.script_element = active_layer_script
             if self.open_after_created:
                 self.start_editor_app()
